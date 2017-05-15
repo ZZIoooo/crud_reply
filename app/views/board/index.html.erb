@@ -1,0 +1,10 @@
+<h3><a href = "/new">[글쓰기]</a></h3>
+<hr>
+<h3>글목록</h3>
+<% @view_post.each do |p| %>
+     제목 : <a href = "/show/<%= p.id %>"><%= p.title %></a><br>
+     작성자 : <%= p.editor %><br>
+     
+     <hr>
+ 
+<% end %>
